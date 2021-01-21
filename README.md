@@ -7,7 +7,7 @@
 
 [slide 0.2: Architecture and tools](slides-0-tools.slides.html)
 
-[slide 1: Primitive types](slide-1-primitive-types.slides.html)
+[slide 1: Primitive types](slides-1-primitive-types.slides.html)
 
 [Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
