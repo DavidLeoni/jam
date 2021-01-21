@@ -142,7 +142,9 @@ def _replace_title( nb_node, source_abs_fn, replacement, title_pat=r'(.*)') -> s
 
         pat = re.compile(r'^(\s*#\s+)'+ title_pat)
         for cell in nb_node.cells:
+            
             if cell.cell_type == "markdown":
+                
                 ma = pat.search(cell.source)
                 
                 if ma:
@@ -153,7 +155,7 @@ def _replace_title( nb_node, source_abs_fn, replacement, title_pat=r'(.*)') -> s
                     break
         
         if not ma:            
-            error("Couldn't find title in file: \n   %s\nThere should be a markdown cell beginning with text # bla bla" % source_abs_fn)    
+            error("Couldn't find title in file: \n   %s\nThere should be a markdown cell beginning with text # bla bla    Complete pattern: %s" % (source_abs_fn,pat.pattern)) 
         return found_title
 
 class FileKinds(Enum):
