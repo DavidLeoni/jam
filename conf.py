@@ -64,12 +64,12 @@ jm.ipynb_exercises = "EXERCISES"
 #NOTE: this string is not just a translation, it's also a command that when building the exercises
 #      removes the content after it in the Python cell it is contained in
 #      If the user inserts extra spaces the phrase will be recognized anyway
-jm.write_solution_here = jmt.tag_regex("# write here", must_begin=False, preserve_line=True)
+jm.write_solution_here = jmt.tag_regex("// write here", must_begin=False, preserve_line=True)
 
 #NOTE: this string is not just a translation, it's also a command that when building the exercises  
 # completely removes the content of the python cell it is contained in (solution comment included). 
 # If the user inserts extra spaces the phrase will be recognized anyway
-jm.solution = jmt.tag_regex("# SOLUTION")
+jm.solution = jmt.tag_regex("// SOLUTION")
 
 #NOTE: this string is not just a translation, it's also a command that 
 #   when building the exercises removes the content after it in the markdown cell
