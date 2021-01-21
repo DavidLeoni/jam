@@ -1,18 +1,14 @@
 
-# Jupman
+# UF06 Java
 
-A template manager for websites generated from Jupyter notebooks.
+## Alta Formazione ITT Marconi
 
-Jupman uses [NbSphinx](http://nbsphinx.readthedocs.io/) and builds with [ReadTheDocs](https://readthedocs.org), local sphinx, local Docker or Github Actions using [ReadTheDocs to Actions](https://github.com/DavidLeoni/readthedocs-to-actions)
+[slide 0.1 Course intro](slides-0-intro.slides.html): 
 
-Official manual is at [jupman.softpython.org](https://jupman.softpython.org)
+[slide 0.2: Architecture and tools](slides-0-tools.slides.html)
 
-Replica for testing ReadTheDocs:
+[slide 1: Primitive types](slide-1-primitive-types.slides.html)
 
-* https://jupman.readthedocs.io
+[Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
-Replicas for testing Github Action build, hosted on Github Pages:
-
-* https://DavidLeoni.github.io/jupman/en/latest
-* https://DavidLeoni.github.io/jupman/en/themed
 
