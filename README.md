@@ -11,6 +11,8 @@
 
 [slides 2: Objects and strings](slides-2-objects-and-strings.slides.html)
 
+[slides 3: Boolean Expressions and If Statements](slides-3-control-flow-if.slides.html)
+
 [Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
 

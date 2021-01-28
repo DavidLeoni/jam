@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>slides-2-objects-and-strings slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>slides-3-control-flow-if slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 <!-- General and theme style sheets -->
 <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
@@ -14387,201 +14387,50 @@ div.jp-OutputPrompt {
 </aside><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="UF-06:-JAVA">UF 06: JAVA<a class="anchor-link" href="#UF-06:-JAVA">&#182;</a></h1><h2 id="Objects-and-strings">Objects and strings<a class="anchor-link" href="#Objects-and-strings">&#182;</a></h2><p><strong>Alta Formazione Professionale - ITT Marconi</strong></p>
+<h1 id="UF-06:-JAVA">UF 06: JAVA<a class="anchor-link" href="#UF-06:-JAVA">&#182;</a></h1><h2 id="Boolean-Expressions-and-If-Statements">Boolean Expressions and If Statements<a class="anchor-link" href="#Boolean-Expressions-and-If-Statements">&#182;</a></h2><p><strong>Alta Formazione Professionale - ITT Marconi</strong></p>
 <p><strong>January 2021</strong></p>
 
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.1.-Objects---Instances-of-Classes"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-1-objects-intro-turtles.html">2.1. Objects - Instances of Classes</a><a class="anchor-link" href="#2.1.-Objects---Instances-of-Classes">&#182;</a></h2><ul>
-<li>will follow the book <a href="https://course.csawesome.org">course.csawesome.org</a> EXCEPT Java Swing Gui</li>
-<li>will add challenges later</li>
-</ul>
-<p>1) What are Objects and Classes?</p>
-<ul>
-<li>class</li>
-<li>instances</li>
-<li>objects</li>
-</ul>
+<h2 id="3.1.-Boolean-Expressions"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit3-If-Statements/topic-3-1-booleans.html">3.1. Boolean Expressions</a><a class="anchor-link" href="#3.1.-Boolean-Expressions">&#182;</a></h2><p>1) Testing Equality (<code>==</code>)</p>
+<p>between primitive types</p>
 
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li><code>new</code> instances / objects</li>
-</ul>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>methods</li>
-<li>attributes / properties</li>
-</ul>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>calling methods</li>
-<li>dot operator <code>.</code></li>
-</ul>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>2) Intro to Objects (with Turtles)</p>
-<p>3) Creating Turtle Objects</p>
-<p>4) Programming Challenge : Turtle Drawing</p>
+<p>between <em>references</em></p>
 
 </div>
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.2.-Creating-and-Initializing-Objects:-Constructors"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-2-constructors.html">2.2. Creating and Initializing Objects: Constructors</a><a class="anchor-link" href="#2.2.-Creating-and-Initializing-Objects:-Constructors">&#182;</a></h2><ul>
-<li><code>new</code> again</li>
-<li>default constructor</li>
-</ul>
-
-</div>
-</div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>1) Overloading Constructors</p>
-<p>2) The World Class Constructors</p>
-<p>3) The Turtle Class Constructors</p>
+<p>2) Relational Operators (<code>&lt;</code>, <code>&gt;</code>)</p>
 <ul>
-<li>passing a reference to world</li>
+<li><code>&lt;</code></li>
+<li><code>&gt;</code></li>
+<li><code>&lt;=</code></li>
+<li><code>&gt;=</code></li>
+<li><code>==</code></li>
+<li><code>!=</code></li>
 </ul>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>4) Object Variables and References</p>
-<ul>
-<li>null</li>
-</ul>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>5) Constructor Signatures</p>
-<ul>
-<li>parameter list</li>
-<li>formal parameters</li>
-</ul>
-<p>6) Formal and Actual Parameters</p>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>12) Programming Challenge: Custom Turtles</p>
-
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.3.-Calling-Methods-Without-Parameters"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-3-methods-no-params.html">2.3. Calling Methods Without Parameters</a><a class="anchor-link" href="#2.3.-Calling-Methods-Without-Parameters">&#182;</a></h2><p>1) Procedural Abstraction</p>
-<ul>
-<li>methods use attributes</li>
-<li>NullPointerException </li>
-</ul>
-
-</div>
-</div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>2) Programming Challenge : Draw a Letter</p>
-
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.4.-Calling-Methods-With-Parameters"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-4-methods-with-params.html">2.4. Calling Methods With Parameters</a><a class="anchor-link" href="#2.4.-Calling-Methods-With-Parameters">&#182;</a></h2><p>1) Tracing Methods</p>
-<p>2) Programming Challenge : Turtle House</p>
 
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.5.-Calling-Methods-that-Return-Values"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-5-methods-return.html">2.5. Calling Methods that Return Values</a><a class="anchor-link" href="#2.5.-Calling-Methods-that-Return-Values">&#182;</a></h2><p>1) Get Methods</p>
-<ul>
-<li>attributes</li>
-<li>set methods</li>
-</ul>
+<p>3) Testing with mod (<code>%</code>)</p>
 
 </div>
-</div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>2) toString() Methods</p>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>3) Methods with Arguments and Return Values</p>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>4) Programming Challenge : Turtle Distances</p>
-
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.6.-Strings"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-6-strings.html">2.6. Strings</a><a class="anchor-link" href="#2.6.-Strings">&#182;</a></h2><p><code>char</code></p>
-<ul>
-<li>single character </li>
-<li>single quote literal  <code>'c'</code></li>
-<li>two bytes</li>
-<li>primitive</li>
-</ul>
-
-</div>
-</div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>String</code></p>
-<ul>
-<li>many characters</li>
-<li>double quote literal <code>"ciao mondo"</code></li>
-<li>object</li>
-<li>immutable</li>
-<li><strong>NOTE</strong>: even if on Java Tutor strings appears as a primitive (blue box), they are not! </li>
-</ul>
-
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>1) String Operators - Concatenation</p>
-<ul>
-<li><code>+</code> operator</li>
-<li>produces a NEW String</li>
-</ul>
-
-</div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&quot;ciao&quot;</span><span class="p">;</span>
-<span class="n">String</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot; mondo&quot;</span><span class="p">;</span>
-<span class="n">String</span> <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">z</span><span class="p">);</span>
+<div class=" highlight hl-java"><pre><span></span><span class="mi">18</span> <span class="o">%</span> <span class="mi">5</span>  <span class="c1">// the remainder is ....</span>
 </pre></div>
 
      </div>
@@ -14597,1138 +14446,7 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>ciao mondo
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.7.-String-Methods"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-7-string-methods.html">2.7. String Methods</a><a class="anchor-link" href="#2.7.-String-Methods">&#182;</a></h2><p>indexes start from 0 <strong>included</strong></p>
-<div class="highlight"><pre><span></span><span class="c1">//                0123456789</span>
-<span class="n">String</span> <span class="n">stringa</span> <span class="o">=</span> <span class="s">&quot;ciao mondo&quot;</span><span class="p">;</span>
-</pre></div>
-
-</div>
-</div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>1) String Methods: <code>length</code>, <code>substring</code>, <code>indexOf</code></p>
-
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>.length()</strong></p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="s">&quot;Ciao&quot;</span><span class="p">.</span><span class="na">length</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>4</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//  012345678</span>
-   <span class="s">&quot;un dubbio&quot;</span><span class="p">.</span><span class="na">length</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>9</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//                  012?.....</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;un\ndubbio&quot;</span><span class="p">);</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>un
-dubbio
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//  012 345678</span>
-   <span class="s">&quot;un\ndubbio&quot;</span><span class="p">.</span><span class="na">length</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>9</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>.substring(a,b)</strong></p>
-<ul>
-<li>from <code>a</code> <strong>included</strong> </li>
-<li>until <code>b</code> <strong>excluded</strong></li>
-<li>you may get <code>IndexOutOfBoundsException</code></li>
-</ul>
-
-</div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//                  0123456</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>rto
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>No chars:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//                  0123456</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One char:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//                  0123456</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>r
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//                  0123456</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>r
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//                  0123456</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">).</span><span class="na">getClass</span><span class="p">())</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>class java.lang.String
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>        <span class="c1">// OK</span>
-<span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>   <span class="c1">// WRONG</span>
-
-<span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span> <span class="c1">// OK</span>
-<span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>      <span class="c1">// WRONG</span>
-</pre></div>
-
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>.indexOf(s)</strong></p>
-<p><code>indexOf</code> returns the <strong>FIRST</strong> occurrence of string <code>s</code></p>
-
-</div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//                  0123456 </span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;cartone&quot;</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;to&quot;</span><span class="p">));</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>3
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>WARNING</strong>: ALWAYS ask yourself if your algorithm still works if you have <strong>duplicates</strong>:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//                  0123456789... </span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;arzigogolato&quot;</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;go&quot;</span><span class="p">));</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>4
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>2) CompareTo and Equals</p>
-<p><strong>Equals:</strong></p>
-<ul>
-<li><code>.equals(otherString)</code> method</li>
-</ul>
-
-</div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ciao&quot;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;Ciao&quot;</span><span class="p">));</span> <span class="c1">// correct way</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>true
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// case sensitive</span>
-
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ciao&quot;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;Ciao&quot;</span><span class="p">));</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>true
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>==</code> operator</p>
-<ul>
-<li>compares <strong>references</strong> </li>
-<li>not char by char !</li>
-</ul>
-<p><strong>Don't use</strong> <code>==</code> <strong>with strings!</strong></p>
-<p><strong>WARNING</strong>: sometimes seems to work because for efficiency Java <em>may</em> cache strings so two identical copies actually share the same memory address</p>
-
-</div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ciao&quot;</span> <span class="o">==</span> <span class="s">&quot;Ciao&quot;</span><span class="p">);</span>  <span class="c1">// WRONG: HERE WORKS *BY LUCK*</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>true
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>compareTo</strong></p>
-<ul>
-<li>negative</li>
-<li>zero</li>
-<li>positive</li>
-</ul>
-
-</div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Mario&quot;</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="s">&quot;Wario&quot;</span><span class="p">));</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-10
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Wario&quot;</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="s">&quot;Mario&quot;</span><span class="p">));</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>10
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Mario&quot;</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="s">&quot;Mario&quot;</span><span class="p">));</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>0
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Different lengths:</p>
-
-</div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Mario&quot;</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="s">&quot;MarioAndLuigi&quot;</span><span class="p">));</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-8
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;MarioAndLuigi&quot;</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="s">&quot;Mario&quot;</span><span class="p">));</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>8
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Comparison with <code>&lt;</code> and <code>&gt;</code> is not supported:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// System.out.println(&quot;Mario&quot; &lt; &quot;Wario&quot;);   // error</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="More-strings">More strings<a class="anchor-link" href="#More-strings">&#182;</a></h3><p>Seems like CSAwsome doesn't have many much material on strings, so</p>
-<p><strong>DO THESE EXERCISES:</strong> <a href="https://codingbat.com/java/String-1">https://codingbat.com/java/String-1</a></p>
-
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-8-IntegerDouble.html">2.8. Wrapper Classes - Integer and Double</a></p>
-<ul>
-<li>primitive -&gt; object conversion</li>
-<li>autoboxing</li>
-</ul>
-
-</div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">Integer</span> <span class="n">i</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>  <span class="c1">// the old way</span>
-<span class="n">Double</span> <span class="n">d</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Double</span><span class="p">(</span><span class="mf">3.5</span><span class="p">);</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">Integer</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>    <span class="c1">// Autoboxing in Java 9+</span>
-<span class="n">Double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">3.5</span><span class="p">;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">i</span><span class="p">.</span><span class="na">getClass</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>class java.lang.Integer</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>QUESTION</strong>: does this work?</p>
-<div class="highlight"><pre><span></span><span class="mf">2.</span><span class="n">getClass</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="overflow-/-underflow">overflow / underflow<a class="anchor-link" href="#overflow-/-underflow">&#182;</a></h3><ul>
-<li><code>Integer.MIN_VALUE</code></li>
-<li><code>Integer.MAX_VALUE</code></li>
-</ul>
-
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.9.-Using-the-Math-Class"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-9-Math.html">2.9. Using the Math Class</a><a class="anchor-link" href="#2.9.-Using-the-Math-Class">&#182;</a></h2><ul>
-<li>static methods</li>
-<li><code>sqrt</code>, <code>pow</code>, <code>abs</code>, <code>max</code>, <code>min</code></li>
-</ul>
-
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Square-root">Square root<a class="anchor-link" href="#Square-root">&#182;</a></h3>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2.23606797749979</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="power">power<a class="anchor-link" href="#power">&#182;</a></h3><p>To raise to a power, you can call <code>pow</code>:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="c1">// 3 power 2</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>9.0</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>WARNING</strong>: in Java <code>3^2</code> does <strong>NOT</strong> mean power raise!</p>
-
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="absolute-value">absolute value<a class="anchor-link" href="#absolute-value">&#182;</a></h3>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>4</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="min-and-max">min and max<a class="anchor-link" href="#min-and-max">&#182;</a></h3>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">Math</span><span class="p">.</span><span class="na">min</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">Math</span><span class="p">.</span><span class="na">min</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 
 
 
@@ -15743,69 +14461,45 @@ dubbio
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">Math</span><span class="p">.</span><span class="na">max</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>7</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Note in Java you can only pass two values:</p>
+<p>Test if a number is even ?</p>
 
 </div>
-</div>
+</div></div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="n">Math</span><span class="p">.</span><span class="na">max</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>  <span class="c1">// WRONG: does not work in Java!</span>
-</pre></div>
+<p>Test if a number is odd ?</p>
 
 </div>
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="random-numbers">random numbers<a class="anchor-link" href="#random-numbers">&#182;</a></h3>
+<h2 id="3.2.-if-Statements-and-Control-Flow"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit3-If-Statements/topic-3-2-ifs.html">3.2. if Statements and Control Flow</a><a class="anchor-link" href="#3.2.-if-Statements-and-Control-Flow">&#182;</a></h2><p>1) Relational Operators in <code>if</code> Statements</p>
+<p><img src="control-flow/img/condition.png" alt="condition"></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="if">if<a class="anchor-link" href="#if">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">());</span>  <span class="c1">// number changes at each call</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">());</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">isRaining</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;BEFORE&quot;</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">isRaining</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;  THEN BRANCH&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;AFTER&quot;</span><span class="p">);</span>
 </pre></div>
 
      </div>
@@ -15825,8 +14519,319 @@ dubbio
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>0.9017304454541571
-0.1058621772838938
+<pre>BEFORE
+  THEN BRANCH
+AFTER
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">isRaining</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;BEFORE&quot;</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">isRaining</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;THEN BRANCH&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;AFTER&quot;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>BEFORE
+AFTER
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Testing-for-equality">Testing for equality<a class="anchor-link" href="#Testing-for-equality">&#182;</a></h3><ul>
+<li><code>if (x == y)   // JAVA</code></li>
+<li><code>if (x === y)  // JAVASCRIPT</code></li>
+<li><code>if (x = y)    // BAD</code></li>
+</ul>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="3.3.-Two-way-Selection:-if-else-Statements"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit3-If-Statements/topic-3-3-if-else.html">3.3. Two-way Selection: if-else Statements</a><a class="anchor-link" href="#3.3.-Two-way-Selection:-if-else-Statements">&#182;</a></h2><p><img src="control-flow/img/condition-else.png" alt="condition-else"></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="if-else">if else<a class="anchor-link" href="#if-else">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">isRaining</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;BEFORE&quot;</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">isRaining</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;  THEN BRANCH&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;  ELSE BRANCH&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;AFTER&quot;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>BEFORE
+  THEN BRANCH
+AFTER
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">isRaining</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;BEFORE&quot;</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">isRaining</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;  THEN BRANCH&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;  ELSE BRANCH&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;AFTER&quot;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>BEFORE
+  ELSE BRANCH
+AFTER
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Nested-Ifs-and-Dangling-Else">Nested Ifs and Dangling Else<a class="anchor-link" href="#Nested-Ifs-and-Dangling-Else">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">condA</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kt">boolean</span> <span class="n">condB</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">condA</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">condB</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;condA and condB&quot;</span><span class="p">);</span>
+   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;only condA&quot;</span><span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>only condA
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">condA</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kt">boolean</span> <span class="n">condB</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">condA</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">condB</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;condA and condB&quot;</span><span class="p">);</span>
+   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;only condA&quot;</span><span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>condA and condB
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="3.4.-Multi-Selection:-else-if-Statements"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit3-If-Statements/topic-3-4-else-ifs.html">3.4. Multi-Selection: else-if Statements</a><a class="anchor-link" href="#3.4.-Multi-Selection:-else-if-Statements">&#182;</a></h2><p><img src="control-flow/img/if-cascade.png" alt="if-cascade"></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="if-cascade">if cascade<a class="anchor-link" href="#if-cascade">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;x is negative&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;x is zero&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+   <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;x is positive&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>x is negative
 </pre>
 </div>
 </div>
@@ -15838,36 +14843,534 @@ dubbio
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Use <code>Random</code> with a seed for repeatable results:</p>
+<h2 id="3.5.-Compound-Boolean-Expressions"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit3-If-Statements/topic-3-5-compound-ifs.html">3.5. Compound Boolean Expressions</a><a class="anchor-link" href="#3.5.-Compound-Boolean-Expressions">&#182;</a></h2><h3 id="1)-And-(&amp;&amp;),-Or-(||),-and-Not-(!)">1) And (<code>&amp;&amp;</code>), Or (<code>||</code>), and Not (<code>!</code>)<a class="anchor-link" href="#1)-And-(&amp;&amp;),-Or-(||),-and-Not-(!)">&#182;</a></h3>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="2)-Truth-Tables">2) Truth Tables<a class="anchor-link" href="#2)-Truth-Tables">&#182;</a></h3><h4 id="AND:-&amp;&amp;">AND: <code>&amp;&amp;</code><a class="anchor-link" href="#AND:-&amp;&amp;">&#182;</a></h4><table>
+<thead><tr>
+<th><code>a</code></th>
+<th><code>b</code></th>
+<th><code>a &amp;&amp; b</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="OR:-||">OR: <code>||</code><a class="anchor-link" href="#OR:-||">&#182;</a></h4><table>
+<thead><tr>
+<th><code>a</code></th>
+<th><code>b</code></th>
+<th>a &#124;&#124; b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="NOT:-!">NOT: <code>!</code><a class="anchor-link" href="#NOT:-!">&#182;</a></h4><table>
+<thead><tr>
+<th><code>a</code></th>
+<th><code>!a</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Guess-booleans">Guess booleans<a class="anchor-link" href="#Guess-booleans">&#182;</a></h3><ol>
+<li><div class="highlight"><pre><span></span><span class="o">!</span><span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">!</span><span class="kc">true</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="kc">true</span> <span class="o">||</span> <span class="kc">false</span><span class="p">))</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="o">!</span><span class="p">(</span><span class="o">!</span><span class="kc">true</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="o">!</span><span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="kc">false</span> <span class="o">||</span> <span class="kc">true</span><span class="p">))</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="o">!</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="o">!</span><span class="kc">false</span><span class="p">))</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="o">!</span><span class="p">((</span><span class="o">!</span><span class="kc">false</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="kc">true</span><span class="p">)))</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="kc">false</span> <span class="o">||</span> <span class="p">(</span><span class="kc">false</span> <span class="o">||</span> <span class="p">((</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">true</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span><span class="p">)))</span>
+</pre></div>
+</li>
+</ol>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Booelans:-which-x,y-give-true-?">Booelans: which <code>x</code>,<code>y</code> give <code>true</code> ?<a class="anchor-link" href="#Booelans:-which-x,y-give-true-?">&#182;</a></h3><p><strong>NOTE</strong>: there can be many combinations that produce <code>true</code>, find them all</p>
+<ol>
+<li><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">||</span> <span class="p">(</span><span class="o">!</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">!</span><span class="n">x</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">y</span> <span class="o">||</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">!</span><span class="n">x</span><span class="p">)</span> <span class="o">||</span>  <span class="n">y</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">||</span> <span class="o">!</span><span class="p">(</span><span class="n">y</span> <span class="o">&amp;&amp;</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="p">((</span><span class="o">!</span><span class="n">x</span><span class="p">)</span> <span class="o">||</span> <span class="o">!</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="o">!</span><span class="n">x</span><span class="p">))</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="p">(</span><span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">x</span> <span class="o">||</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">||</span> <span class="o">!</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">x</span> <span class="o">||</span> <span class="o">!</span><span class="p">(</span><span class="n">x</span><span class="p">)))))</span>
+</pre></div>
+</li>
+</ol>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Booelans:-which-x,y-give-false-?">Booelans: which <code>x</code>,<code>y</code> give <code>false</code> ?<a class="anchor-link" href="#Booelans:-which-x,y-give-false-?">&#182;</a></h3><p><strong>QUESTION</strong>:  For each of these expressions, for which values of <code>x</code> &amp;&amp; <code>y</code> they give <code>false</code>?</p>
+<p><strong>NOTE</strong>: there can be many combinations that produce <code>false</code>, find them all</p>
+<ol>
+<li><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">||</span> <span class="p">((</span><span class="o">!</span><span class="n">y</span><span class="p">)</span> <span class="o">||</span> <span class="n">z</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">||</span> <span class="p">(</span><span class="o">!</span><span class="n">y</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="o">!</span><span class="n">z</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="o">!</span><span class="p">(</span><span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="n">y</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="n">z</span><span class="p">))</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="o">!</span><span class="p">(</span><span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="n">y</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">x</span> <span class="o">||</span> <span class="n">z</span><span class="p">))</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">||</span> <span class="p">((</span><span class="n">x</span> <span class="o">||</span> <span class="n">y</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="n">z</span><span class="p">))</span>
+</pre></div>
+</li>
+</ol>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="3)-Short-Circuit-Evaluation-?">3) Short Circuit Evaluation ?<a class="anchor-link" href="#3)-Short-Circuit-Evaluation-?">&#182;</a></h3><p><code>false &amp;&amp; superComplicatedBooleanExpression</code></p>
+<p><code>true  &amp;&amp; superComplicatedBooleanExpression</code></p>
+<table>
+<thead><tr>
+<th><code>a</code></th>
+<th><code>b</code></th>
+<th><code>a &amp;&amp; b</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="3)-Short-Circuit-Evaluation-?">3) Short Circuit Evaluation ?<a class="anchor-link" href="#3)-Short-Circuit-Evaluation-?">&#182;</a></h3><p><code>false || superComplicatedBooleanExpression</code></p>
+<p><code>true || superComplicatedBooleanExpression</code></p>
+<table>
+<thead><tr>
+<th><code>a</code></th>
+<th><code>b</code></th>
+<th>a &#124;&#124; b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Short-circuits-to-avoid-errors-...">Short circuits to avoid errors ...<a class="anchor-link" href="#Short-circuits-to-avoid-errors-...">&#182;</a></h3><p>Let's pick an error:</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
+</pre></div>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+<span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">ArithmeticException</span><span class="p">:</span> <span class="o">/</span> <span class="n">by</span> <span class="n">zero</span>
+    <span class="n">at</span> <span class="p">.(</span><span class="err">#</span><span class="mi">119</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Let's create a faulty boolean expression:</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span> <span class="o">==</span> <span class="mi">5</span>
+</pre></div>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+<span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">ArithmeticException</span><span class="p">:</span> <span class="o">/</span> <span class="n">by</span> <span class="n">zero</span>
+    <span class="n">at</span> <span class="p">.(</span><span class="err">#</span><span class="mi">119</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Short-circuits-to-avoid-errors-?">Short circuits to avoid errors ?<a class="anchor-link" href="#Short-circuits-to-avoid-errors-?">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><code>true &amp;&amp; (1/0 == 5)</code></li>
+</ul>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><code>false &amp;&amp; (1/0 == 5)</code></li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><code>true || (1/0 == 5)</code></li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><code>false || (1/0 == 5)</code></li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">seed</span>  <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-<span class="n">Random</span> <span class="n">generator</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;seed = &quot;</span> <span class="o">+</span> <span class="n">seed</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">generator</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">());</span>  
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">generator</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">());</span>
+<div class=" highlight hl-java"><pre><span></span>
+</pre></div>
 
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>  
+     </div>
+</div>
+</div>
+</div>
 
-<span class="n">seed</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-<span class="n">Random</span> <span class="n">generator</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;seed = &quot;</span> <span class="o">+</span> <span class="n">seed</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">generator</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">());</span>   <span class="c1">// get the same as before  </span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">generator</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">());</span>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>EXERCISE</strong>: Write some code which puts <code>true</code> in boolean var <code>isSecB</code> if the second character of the string <code>s</code> is the character <code>'B'</code>. Otherwise, stores <code>false</code>.</p>
 
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>  
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="c1">//  01234</span>
+   <span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;ABACO&quot;</span><span class="p">;</span>  <span class="c1">// true         </span>
+<span class="c1">// String s = &quot;BIRBA&quot;;  // false</span>
 
-<span class="n">seed</span> <span class="o">=</span> <span class="mi">1234</span><span class="p">;</span>                                  <span class="c1">// changed seed</span>
-<span class="n">Random</span> <span class="n">generator</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span>  
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;seed = &quot;</span> <span class="o">+</span> <span class="n">seed</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">generator</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">());</span>   <span class="c1">// different sequence</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">generator</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">());</span>
+<span class="c1">// write here</span>
+<span class="kt">boolean</span> <span class="n">isSecB</span> <span class="o">=</span> 
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">isSecB</span><span class="p">);</span>
+</pre></div>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="More-short-circuits">More short circuits<a class="anchor-link" href="#More-short-circuits">&#182;</a></h3><ol>
+<li><div class="highlight"><pre><span></span><span class="kc">true</span> <span class="o">||</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="o">==</span><span class="mi">5</span> <span class="o">&amp;&amp;</span> <span class="kc">true</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">!</span><span class="kc">false</span><span class="p">)</span> <span class="o">||</span> <span class="o">!</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="o">==</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="o">==</span><span class="mi">5</span> <span class="o">&amp;&amp;</span> <span class="kc">true</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">!</span><span class="kc">true</span><span class="p">)</span> <span class="o">||</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="o">!=</span><span class="mi">5</span> <span class="o">||</span> <span class="kc">true</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="kc">true</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="o">==</span><span class="mi">5</span>
+</pre></div>
+</li>
+</ol>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="3.6.-Equivalent-Boolean-Expressions-(De-Morgan&#8217;s-Laws)"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit3-If-Statements/topic-3-6-DeMorgan.html">3.6. Equivalent Boolean Expressions (De Morgan&#8217;s Laws)</a><a class="anchor-link" href="#3.6.-Equivalent-Boolean-Expressions-(De-Morgan&#8217;s-Laws)">&#182;</a></h2><p>1) De Morgan’s Laws</p>
+<ul>
+<li><p><code>!(a &amp;&amp; b)</code> is equivalent to <code>!a || !b</code></p>
+</li>
+<li><p><code>!(a || b)</code> is equivalent to <code>!a &amp;&amp; !b</code></p>
+</li>
+</ul>
+<p>2) Truth Tables</p>
+<p>3) Simplifying Boolean Expressions</p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="De-Morgan---questions">De Morgan - questions<a class="anchor-link" href="#De-Morgan---questions">&#182;</a></h3><p>Look at following expressions, and try to rewrite them in equivalent ones by using De Morgan laws, simplifying the result wherever possible. Then verify the translation produces the same result as the original for all possible values of <code>x</code> &amp;&amp; <code>y</code>.</p>
+<ol>
+<li><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">!</span><span class="n">x</span><span class="p">)</span> <span class="o">||</span> <span class="n">y</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">!</span><span class="n">x</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</li>
+<li><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">!</span><span class="n">x</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">x</span> <span class="o">||</span> <span class="n">y</span><span class="p">))</span>
+</pre></div>
+</li>
+</ol>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><span class="kt">boolean</span> <span class="n">x</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="c1">//boolean x = false, y = true;</span>
+<span class="c1">//boolean x = true, y = false;</span>
+<span class="c1">//boolean x = true, y = true;</span>
+
+<span class="kt">boolean</span> <span class="n">orig</span> <span class="o">=</span> <span class="n">x</span> <span class="o">||</span> <span class="n">y</span><span class="p">;</span>
+<span class="kt">boolean</span> <span class="n">trans</span> <span class="o">=</span> <span class="o">!</span><span class="p">((</span><span class="o">!</span><span class="n">x</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="n">y</span><span class="p">));</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;orig=&quot;</span> <span class="o">+</span> <span class="n">orig</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;trans=&quot;</span> <span class="o">+</span> <span class="n">trans</span><span class="p">);</span>
+</pre></div>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="3.7.-Comparing-Objects"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit3-If-Statements/topic-3-7-comparing-objects.html">3.7. Comparing Objects</a><a class="anchor-link" href="#3.7.-Comparing-Objects">&#182;</a></h2><ul>
+<li><code>==</code> vs <code>equals</code></li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Date</span><span class="p">;</span>  <span class="c1">// (note this class is actually deprecated)</span>
+
+<span class="n">Date</span> <span class="n">d1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2021</span><span class="p">);</span>
+<span class="n">Date</span> <span class="n">d2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2021</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">d1</span> <span class="o">==</span> <span class="n">d2</span><span class="p">);</span>       <span class="c1">// ?</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">d1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">d2</span><span class="p">));</span>  <span class="c1">// ?</span>
+</pre></div>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Date</span><span class="p">;</span>
+
+<span class="n">Date</span> <span class="n">d1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2021</span><span class="p">);</span>
+<span class="n">Date</span> <span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">d1</span> <span class="o">==</span> <span class="n">d2</span><span class="p">);</span>       <span class="c1">// ?</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">d1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">d2</span><span class="p">));</span>  <span class="c1">// ?</span>
+</pre></div>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Date</span><span class="p">;</span>
+
+<span class="n">Date</span> <span class="n">d1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2021</span><span class="p">);</span>
+<span class="n">Date</span> <span class="n">d2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2582</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">d1</span> <span class="o">==</span> <span class="n">d2</span><span class="p">);</span>       <span class="c1">// ?</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">d1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">d2</span><span class="p">));</span>  <span class="c1">// ?</span>
+</pre></div>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Date</span><span class="p">;</span>
+
+<span class="n">Date</span> <span class="n">d1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2021</span><span class="p">);</span>
+<span class="n">Date</span> <span class="n">d2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2021</span><span class="p">);</span>
+<span class="n">d2</span><span class="p">.</span><span class="na">setYear</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">d1</span> <span class="o">==</span> <span class="n">d2</span><span class="p">);</span>       <span class="c1">// ?</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">d1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">d2</span><span class="p">));</span>  <span class="c1">// ?</span>
+</pre></div>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="A-better-date..">A better date..<a class="anchor-link" href="#A-better-date..">&#182;</a></h3><ul>
+<li>See <a href="https://www.baeldung.com/java-8-date-time-intro">Java 8 java.time.LocalDate</a></li>
+<li><em>immutable</em></li>
+<li><em>threadsafe</em></li>
+</ul>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="1)-String-Equality">1) String Equality<a class="anchor-link" href="#1)-String-Equality">&#182;</a></h3><p><strong>WARNING</strong>: <strong>DON'T</strong> use <code>==</code> with strings</p>
+<p>Strings are <em>immutable</em> and <em>cached</em> !</p>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>2) Equality with New Strings</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+<span class="n">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">s2</span><span class="p">));</span>
 </pre></div>
 
      </div>
@@ -15887,17 +15390,8 @@ dubbio
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>seed = 10
-0.7304302967434272
-0.2578027905957804
-
-seed = 10
-0.7304302967434272
-0.2578027905957804
-
-seed = 1234
-0.6465821602909256
-0.9513577109193919
+<pre>false
+true
 </pre>
 </div>
 </div>
@@ -15906,7 +15400,104 @@ seed = 1234
 
 </div>
 
-</div></div></section></section>
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// WARNING: Java caches strings !</span>
+<span class="c1">// This very particular behaviour happens *ONLY* because we have strings !!</span>
+
+<span class="n">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">&quot;Hello&quot;</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">s2</span> <span class="o">=</span> <span class="s">&quot;Hello&quot;</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">s2</span><span class="p">));</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>true
+true
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Boxed-primitives">Boxed primitives<a class="anchor-link" href="#Boxed-primitives">&#182;</a></h3><p>... are <em>immutable</em></p>
+<p>... are they <em>cached</em>?</p>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">Integer</span> <span class="n">i1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">Integer</span> <span class="n">i2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i1</span> <span class="o">==</span> <span class="n">i2</span><span class="p">);</span>       <span class="c1">// ?</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">i2</span><span class="p">));</span>  <span class="c1">// ?</span>
+</pre></div>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">Integer</span> <span class="n">i1</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>  <span class="c1">// autoboxed </span>
+<span class="n">Integer</span> <span class="n">i2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i1</span> <span class="o">==</span> <span class="n">i2</span><span class="p">);</span>        <span class="c1">// ?</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">i2</span><span class="p">));</span>   <span class="c1">// ?</span>
+</pre></div>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="3)-Comparing-with-null">3) Comparing with <code>null</code><a class="anchor-link" href="#3)-Comparing-with-null">&#182;</a></h3><p><code>a == b</code></p>
+<ul>
+<li>left ?</li>
+<li>right ?</li>
+</ul>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>a.equals(b)</code></p>
+<ul>
+<li>left ?</li>
+<li>right ?</li>
+</ul>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit3-If-Statements/magpieindex.html">3.12. Magpie Chatbot Lab</a></p>
+
+</div>
+</div></section></section>
 </div>
 </div>
 </body>
