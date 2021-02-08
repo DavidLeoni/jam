@@ -13,6 +13,8 @@
 
 [slides 3: Boolean Expressions and If Statements](slides-3-control-flow-if.slides.html)
 
+[slides 4: Iteration (Loops)](slides-4-control-flow-loops.html)
+
 [Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
 
