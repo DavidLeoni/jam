@@ -13,7 +13,9 @@
 
 [slides 3: Boolean Expressions and If Statements](slides-3-control-flow-if.slides.html)
 
-[slides 4: Iteration (Loops)](slides-4-control-flow-loops.html)
+[slides 4: Iteration (Loops)](slides-4-control-flow-loops.slides.html)
+
+* (if not working, check  [this link](https://github.com/DavidLeoni/jam/blob/master/slides-4-control-flow-loops.ipynb))
 
 [Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
