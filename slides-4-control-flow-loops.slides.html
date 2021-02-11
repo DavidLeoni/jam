@@ -14388,106 +14388,187 @@ div.jp-OutputPrompt {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="UF-06:-JAVA">UF 06: JAVA<a class="anchor-link" href="#UF-06:-JAVA">&#182;</a></h1><h2 id="Iteration-(Loops)">Iteration (Loops)<a class="anchor-link" href="#Iteration-(Loops)">&#182;</a></h2><p><strong>Alta Formazione Professionale - ITT Marconi</strong></p>
-<p><strong>January 2021</strong></p>
+<p><strong>February 2021</strong></p>
 
 </div>
-</div>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="4.1-While-Loops"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-1-while-loops.html">4.1 While Loops</a><a class="anchor-link" href="#4.1-While-Loops">&#182;</a></h2><p><img src="control-flow/img/while.png" alt=""></p>
 
 </div>
-</div>
+</div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>only need it if:</p>
+<p><strong>only need it if</strong>:</p>
 <ul>
 <li>number of iterations not known a priori</li>
 <li>... or must add / remove elements from sequence you are iterating</li>
 </ul>
 
 </div>
-</div>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;abracadabra&quot;</span><span class="p">;</span>
+<h2 id="While-loop---example">While loop - example<a class="anchor-link" href="#While-loop---example">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;abracadabra&quot;</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>      
+<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>                                         <span class="c1">// PROGRESS VAR(s)</span>
 <span class="kt">boolean</span> <span class="n">found</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;BEFORE&quot;</span><span class="p">);</span>
 
-<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">found</span><span class="p">)</span> <span class="p">{</span>                 <span class="c1">// BOOLEAN CONDITION</span>
-
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">found</span><span class="p">)</span> <span class="p">{</span>                 <span class="c1">// BOOLEAN CONDITION ON PROGRESS VAR(s)</span>
+  
   <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Checking &quot;</span> <span class="o">+</span> <span class="n">s</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>   <span class="c1">// STATEMENTS</span>
-
+    
   <span class="k">if</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="sc">&#39;c&#39;</span><span class="p">){</span>            
       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Found it!&quot;</span><span class="p">);</span>      
       <span class="n">found</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
   <span class="p">}</span>
-
-  <span class="n">i</span><span class="o">++</span><span class="p">;</span>                                             <span class="c1">// PROGRESS !</span>
+  
+  <span class="n">i</span><span class="o">++</span><span class="p">;</span>                                             <span class="c1">// MUTATE PROGRESS VAR !</span>
 <span class="p">}</span>
 
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;AFTER&quot;</span><span class="p">);</span>
 </pre></div>
 
+     </div>
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div>
 
-<pre><code>BEFORE
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>BEFORE
 Checking a
 Checking b
 Checking r
 Checking a
 Checking c
 Found it!
-AFTER</code></pre>
+AFTER
+</pre>
+</div>
+</div>
 
 </div>
+
 </div>
+
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>1) Three Steps to Writing a Loop</p>
 
 </div>
-</div>
+</div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>2) Tracing Loops</p>
 
 </div>
-</div>
+</div></div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>3) Common Errors with Loops</p>
 
 </div>
-</div>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>4) Input-Controlled Loops</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
-
-    <span class="n">Scanner</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span> <span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="n">String</span> <span class="n">statement</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
-
-    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">statement</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;bye&quot;</span><span class="p">))</span>
-    <span class="p">{</span>            
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span> <span class="p">(</span><span class="s">&quot;Tell me something..&quot;</span><span class="p">);</span>
-            <span class="n">statement</span> <span class="o">=</span> <span class="n">in</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span> <span class="p">(</span><span class="s">&quot;You told me &quot;</span> <span class="o">+</span> <span class="n">statement</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Goodbye!&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span>
 </pre></div>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exercise---paperboard">Exercise - paperboard<a class="anchor-link" href="#Exercise---paperboard">&#182;</a></h2><p>✪ Prints integer numbers from <code>0</code> to <code>k</code> INCLUDED using a <code>while</code>, and for each number prints to its side one among the strings <code>"PA"</code>, <code>"PER"</code> and <code>"BOARD"</code> alternating them</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="n">Scanner</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span> <span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="n">String</span> <span class="n">statement</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">statement</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;bye&quot;</span><span class="p">))</span>
+<span class="p">{</span>            
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span> <span class="p">(</span><span class="s">&quot;Tell me something..&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span> <span class="p">(</span><span class="s">&quot;&gt; &quot;</span><span class="p">);</span>
+        <span class="n">statement</span> <span class="o">=</span> <span class="n">in</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span> <span class="p">(</span><span class="s">&quot;You told me: &quot;</span> <span class="o">+</span> <span class="n">statement</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Goodbye!&quot;</span><span class="p">);</span>
+</pre></div>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
+<pre><code>Tell me something..
+&gt; Ciao
+You told me: Ciao
+Tell me something..
+&gt; You are a parrot
+You told me: You are a parrot
+Tell me something..
+&gt;</code></pre>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Exercise:-prepare-sandwiches">Exercise: prepare sandwiches<a class="anchor-link" href="#Exercise:-prepare-sandwiches">&#182;</a></h2><p>We need to prepare sandwiches with cheese: we have a certain number of pieces of bread and cheese slices, not necessarily in the same quantity. We will couple bread and cheese until we run out of one type of ingredient. At the end we will say if there is any ingredient left (or no ingredient at all). Write a function <code>prepare</code> which takes two parameters and PRINTS the procedure.</p>
+<div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">prepare</span><span class="p">(</span><span class="kt">int</span> <span class="n">bread</span><span class="p">,</span> <span class="kt">int</span> <span class="n">cheese</span><span class="p">){</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="p">(</span><span class="s">&quot;TODO IMPLEMENT ME!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p><strong>Example</strong></p>
+<div class="highlight"><pre><span></span><span class="n">prepare</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+</pre></div>
+
+<pre><code>Prepared a sandwich: 2 remaining pieces of bread, 4 remaining slices of cheese
+Prepared a sandwich: 1 remaining pieces of bread, 3 remaining slices of cheese
+Prepared a sandwich: 0 remaining pieces of bread, 2 remaining slices of cheese
+Two slices of cheese are left.</code></pre>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Try also:</strong></p>
+
+<pre><code>//prepare(5,3);
+//prepare(4,4);</code></pre>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Follow up</strong>: In the <code>main</code>, add another <code>while</code> with a <code>Scanner</code> that keeps asking how much bread/cheese we have and then calls <code>prepare</code>.</p>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Exercise---paperboard">Exercise - paperboard<a class="anchor-link" href="#Exercise---paperboard">&#182;</a></h2><p>✪ Print integer numbers from <code>0</code> to <code>k</code> INCLUDED using a <code>while</code>, and for each number prints to its side one among the strings <code>"PA"</code>, <code>"PER"</code> and <code>"BOARD"</code> alternating them</p>
 <p>Ex - for <code>k=8</code> prints</p>
 
 <pre><code>0 PA
@@ -14501,51 +14582,16 @@ AFTER</code></pre>
 8 BOARD</code></pre>
 
 </div>
-</div>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exercise---until-ten">Exercise - until ten<a class="anchor-link" href="#Exercise---until-ten">&#182;</a></h2><p>✪ Given two numbers <code>x</code> and <code>y</code>, write some code with a while which prints and increments the numbers, stopping as soon as one of them reaches ten.</p>
+<h2 id="Exercise---converge">Exercise - converge<a class="anchor-link" href="#Exercise---converge">&#182;</a></h2><p>Given two numbers <code>x</code> and <code>k</code>, using a <code>while</code> modify and print <code>x</code> until it reaches <code>k</code> included. <strong>NOTE</strong>: <code>k</code> can either be greater or lesser than <code>x</code>, you must handle both cases</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
-
-<span class="c1">//int x = 8, y = 4;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>After your code, it must print:</p>
-
-<pre><code>5 7
-6 8
-7 9
-8 10</code></pre>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exercise---converge">Exercise - converge<a class="anchor-link" href="#Exercise---converge">&#182;</a></h2><p>✪ Given two numbers <code>x</code> and <code>k</code>, using a <code>while</code> modify and print <code>x</code> until it reaches <code>k</code> included</p>
-<p><strong>NOTE</strong>: <code>k</code> can either be greater or lesser than <code>x</code>, you must handle both cases</p>
-<p>Example 1 - given:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
@@ -14571,16 +14617,16 @@ AFTER</code></pre>
 5</code></pre>
 
 </div>
-</div>
+</div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Example 2 - given:</p>
+<p>Other example:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
@@ -14591,7 +14637,7 @@ AFTER</code></pre>
 </div>
 </div>
 
-</div>
+</div></div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>prints:</p>
@@ -14606,14 +14652,12 @@ AFTER</code></pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>    <span class="c1">// 3 4 5</span>
 <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>    <span class="c1">// 6 5 4 3 2</span>
 <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">4</span>     <span class="c1">// 4</span>
-
-<span class="c1">// write here</span>
 </pre></div>
 
      </div>
@@ -14621,58 +14665,53 @@ AFTER</code></pre>
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="4.2-For-Loops"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-2-for-loops.html">4.2 For Loops</a><a class="anchor-link" href="#4.2-For-Loops">&#182;</a></h2><p><img src="control-flow/img/for.png" alt="for-loop"></p>
+<h2 id="4.2-For-Loops"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-2-for-loops.html">4.2 For Loops</a><a class="anchor-link" href="#4.2-For-Loops">&#182;</a></h2><p><img src="control-flow/img/for.png" style="height:17em"></p>
+<p><strong>Need it:</strong></p>
+<ul>
+<li>if number of iterations is known in advance</li>
+<li>you <em>don't</em> want to add/remove elements from the sequence you are iterating!</li>
+</ul>
 
 </div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>If possible, prefer it to</strong> <code>while</code></p>
+
 </div>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>1) Three Parts of a For Loop</p>
 
 </div>
-</div>
+</div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>2) Decrementing Loops</p>
 
 </div>
-</div>
+</div></div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>3) Turtle Loops</p>
 
 </div>
-</div>
+</div></div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>4) Programming Challenge : Turtles Drawing Shapes</p>
 
 </div>
-</div>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exercise---sghiribizzo">Exercise - sghiribizzo<a class="anchor-link" href="#Exercise---sghiribizzo">&#182;</a></h2><p>Write some code which given the string s prints all the possible combinations of row couples such that a row begins with the first characters of <code>s</code> and the successive continues with the following characters.</p>
-<p>Example - given:</p>
+<h2 id="Exercise---sghiribizzo">Exercise - sghiribizzo<a class="anchor-link" href="#Exercise---sghiribizzo">&#182;</a></h2><p>Write some code which given the string <code>s</code> PRINTS all the possible combinations of row couples such that a row begins with the first characters of <code>s</code> and the successive continues with the following characters.</p>
 <div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;sghiribizzo&quot;</span><span class="p">;</span>
 </pre></div>
-<p>prints:</p>
 
 <pre><code>s
  ghiribizzo
@@ -14697,18 +14736,18 @@ sghiribizz
 sghiribizzo</code></pre>
 
 </div>
-</div>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exercise---DNA">Exercise - DNA<a class="anchor-link" href="#Exercise---DNA">&#182;</a></h2><p>Given two DNA strings <code>s1</code> and <code>s2</code> of equal length, write some code which prints among the first and second string another string made by spaces <code>` and pipe</code>|` where equal characters are found.</p>
+<h2 id="Exercise---DNA">Exercise - DNA<a class="anchor-link" href="#Exercise---DNA">&#182;</a></h2><p>Given two DNA strings <code>s1</code> and <code>s2</code> of equal length, write some code which PRINTS among the first and second string another string made by spaces <code>` and pipe</code>|` where equal characters are found.</p>
 <p>HINT: instead of keeping building a string with <code>+</code> which is an expensive operation, consider using <code>System.out.print()</code> without the final <code>ln</code></p>
 <p>Example - given:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">s1</span> <span class="o">=</span> <span class="s">&quot;ATACATATAGGGCCAATTATTATAAGTCAC&quot;</span><span class="p">;</span>
@@ -14720,7 +14759,7 @@ sghiribizzo</code></pre>
 </div>
 </div>
 
-</div>
+</div></div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Prints:</p>
@@ -14730,180 +14769,16 @@ sghiribizzo</code></pre>
 CGCCACTTAAGCGCCCTGTATTAAAGTCGC</code></pre>
 
 </div>
-</div>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="4.3.-Loops-and-Strings">4.3. <a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-3-strings-loops.html">Loops and Strings</a><a class="anchor-link" href="#4.3.-Loops-and-Strings">&#182;</a></h2><p>1) While Find and Replace Loop</p>
-<p>2) For Loops: Reverse String</p>
-<p>3) Programming Challenge : String Replacement Cats and Dogs</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="4.4.-Nested-For-Loops"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-4-nested-loops.html">4.4. Nested For Loops</a><a class="anchor-link" href="#4.4.-Nested-For-Loops">&#182;</a></h2><p><img src="control-flow/img/nested-for.png" alt="nested-for"></p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>1) Nested Loops with Turtles</p>
-<p>2) Programming Challenge : Turtle Snowflakes</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exercise---cover-the-plane">Exercise - cover the plane<a class="anchor-link" href="#Exercise---cover-the-plane">&#182;</a></h2><p>✪ Given the integers <code>a</code> and <code>b</code>, write some code which prints all the possible couples of numbers <code>x</code> and <code>y</code> such that $1 \leq x \leq a$ and $1 \leq y \leq b$</p>
-<p>For example, given:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>it must print:</p>
-
-<pre><code>1 1
-1 2
-1 3
-2 1
-2 2
-2 3
-3 1
-3 2
-3 3
-4 1
-4 2
-4 3
-5 1
-5 2
-5 3</code></pre>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exercise---triangular">Exercise - triangular<a class="anchor-link" href="#Exercise---triangular">&#182;</a></h2><p>✪ Given the integer <code>a</code>, write some code which prints all the possible couples of numbers <code>x</code> and <code>y</code> such that $0 \leq x \leq y &lt; a$</p>
-<p>For example, for</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>it must print:</p>
-
-<pre><code>0 0
-0 1
-0 2
-0 3
-0 4
-1 1
-1 2
-1 3
-1 4
-2 2
-2 3
-2 4
-3 3
-3 4
-4 4</code></pre>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exercise---FBI-Crime-unit">Exercise - FBI Crime unit<a class="anchor-link" href="#Exercise---FBI-Crime-unit">&#182;</a></h2><p>The FBI Crime unit is trying to infiltrate a powerful mob organization - so far, they managed to obtain the services of an informant who now and then gives precious tips. All the investigations are then recorded in
-classified documents, which need to be anonimized according the reader clearence level. In order to mark possibly sensitive information, the detective place symbols such as <code>&gt;</code> and <code>&lt;</code> to delimit pieces of text to anonimize.</p>
-<p>Write some code which anonimizes the text, substituting words in sensitive sequences with the proper number of asterisks.</p>
-<p><strong>Example</strong> - given:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">text</span> <span class="o">=</span>   <span class="s">&quot;Our &gt; informant Mr Big Ears &lt;, who&#39;s operating within &gt; the Organization, &lt; told us &quot;</span>
-              <span class="o">+</span> <span class="s">&quot;about a possible encounter among suspects we&#39;re following. The &gt; suspect Mr Wrong Do &quot;</span> 
-              <span class="o">+</span> <span class="s">&quot;(also known as Mr Cut Throat) &lt; was in fact seen last night near &gt; Vice Palace &lt; while &quot;</span>
-              <span class="o">+</span> <span class="s">&quot;talking with &gt; Mr So Bad &lt;. They nervously glanced around, and &gt; after a while, &quot;</span> 
-              <span class="o">+</span> <span class="s">&quot;they quickly exchanged two suitcases. &lt; The details of the deal are yet to be discovered.&quot;</span><span class="p">;</span>
-
-<span class="n">String</span> <span class="n">punctuation</span> <span class="o">=</span> <span class="s">&quot;().;,&quot;</span><span class="p">;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>your code should print:</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>"Our  ********* ** *** **** , who's operating within  *** ************,  told 
-us about a possible encounter among suspects we're following. The  ******* ** 
-***** ** (**** ***** ** ** *** ******)  was in fact seen last night near  **** 
-******  while talking with  ** ** *** . They nervously glanced around, and  
-***** * *****, **** ******* ********* *** *********.  The details of the deal 
-are yet to be discovered."</code></pre>
-<p><strong>NOTE 1</strong>: Sometimes detectives place <code>&gt; &lt;</code> with punctuation around, your program should handle those cases as well, preserving punctuation in the output. 
-I.e.</p>
-
-<pre><code>Our &gt; informant Mr Big Ears &lt;, who's</code></pre>
-<p>should become</p>
-
-<pre><code>Our  ********* ** *** **** , who's</code></pre>
-<p><strong>NOTE 2</strong>: Your program should also preserve punctuation in anonimized words, i.e.</p>
-
-<pre><code>&gt; suspect Mr Wrong Do (also known as Mr Cut Throat)</code></pre>
-<p>should become:</p>
-
-<pre><code>******* ** ***** ** (**** ***** ** ** *** ******)</code></pre>
-<p><strong>IMPORTANT: HAVE YOU READ THE ABOVE NOTES?</strong></p>
-<p>Making a rough version of the program should be relatively straightforward, making the details also work may be more challenging</p>
-<p><strong>HINT</strong>: to build the output string incrementally, use a <code>StringBuilder</code>:</p>
+<h2 id="4.3.-Loops-and-Strings">4.3. <a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-3-strings-loops.html">Loops and Strings</a><a class="anchor-link" href="#4.3.-Loops-and-Strings">&#182;</a></h2><p>Remember <code>StringBuilder</code>:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-java"><pre><span></span><span class="n">StringBuilder</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">();</span>
@@ -14940,7 +14815,202 @@ I.e.</p>
 
 </div>
 
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>1) <a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-3-strings-loops.html#while-find-and-replace-loop">While Find and Replace Loop</a></p>
+<p><strong>I don't like the book example. Try rewriting it with a</strong> <code>StringBuilder</code></p>
+
 </div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>2) <a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-3-strings-loops.html#for-loops-reverse-string">For Loops: Reverse String</a></p>
+<p><strong>I don't like the book example. Try rewriting it with a</strong> <code>StringBuilder</code></p>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>3) <a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-3-strings-loops.html#groupwork-programming-challenge-string-replacement-cats-and-dogs">Programming Challenge : String Replacement Cats and Dogs</a></p>
+<p><strong>I don't like the book example. Try rewriting it with a</strong> <code>StringBuilder</code></p>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="4.4.-Nested-For-Loops"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-4-nested-loops.html">4.4. Nested For Loops</a><a class="anchor-link" href="#4.4.-Nested-For-Loops">&#182;</a></h2><p><img src="control-flow/img/nested-for.png" alt="nested-for"></p>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>1) Nested Loops with Turtles</p>
+<p>2) Programming Challenge : Turtle Snowflakes</p>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Exercise---cover-the-plane">Exercise - cover the plane<a class="anchor-link" href="#Exercise---cover-the-plane">&#182;</a></h2><p>✪ Given the integers <code>a</code> and <code>b</code>, write some code which prints all the possible couples of numbers <code>x</code> and <code>y</code> such that $1 \leq x \leq a$ and $1 \leq y \leq b$</p>
+<p>For example, given:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>it must print:</p>
+
+<pre><code>1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3
+4 1
+4 2
+4 3
+5 1
+5 2
+5 3</code></pre>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Exercise---triangular">Exercise - triangular<a class="anchor-link" href="#Exercise---triangular">&#182;</a></h2><p>✪ Given the integer <code>a</code>, write some code which prints all the possible couples of numbers <code>x</code> and <code>y</code> such that $0 \leq x \leq y &lt; a$</p>
+<p>For example, for</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>it must print:</p>
+
+<pre><code>0 0
+0 1
+0 2
+0 3
+0 4
+1 1
+1 2
+1 3
+1 4
+2 2
+2 3
+2 4
+3 3
+3 4
+4 4</code></pre>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Exercise---FBI-Crime-unit">Exercise - FBI Crime unit<a class="anchor-link" href="#Exercise---FBI-Crime-unit">&#182;</a></h2><p>The FBI Crime unit is trying to infiltrate a powerful mob organization - so far, they managed to obtain the services of an informant who now and then gives precious tips. All the investigations are then recorded in
+classified documents, which need to be anonimized according the reader clearence level. In order to mark possibly sensitive information, the detective place symbols such as <code>&gt;</code> and <code>&lt;</code> to delimit pieces of text to anonimize.</p>
+<p>Write some code which anonimizes the text, substituting words in sensitive sequences with the proper number of asterisks.</p>
+<p><strong>Example</strong> - given:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">text</span> <span class="o">=</span>   <span class="s">&quot;Our &gt; informant Mr Big Ears &lt;, who&#39;s operating within &gt; the Organization, &lt; told us &quot;</span>
+              <span class="o">+</span> <span class="s">&quot;about a possible encounter among suspects we&#39;re following. The &gt; suspect Mr Wrong Do &quot;</span> 
+              <span class="o">+</span> <span class="s">&quot;(also known as Mr Cut Throat) &lt; was in fact seen last night near &gt; Vice Palace &lt; while &quot;</span>
+              <span class="o">+</span> <span class="s">&quot;talking with &gt; Mr So Bad &lt;. They nervously glanced around, and &gt; after a while, &quot;</span> 
+              <span class="o">+</span> <span class="s">&quot;they quickly exchanged two suitcases. &lt; The details of the deal are yet to be discovered.&quot;</span><span class="p">;</span>
+
+<span class="n">String</span> <span class="n">punctuation</span> <span class="o">=</span> <span class="s">&quot;().;,&quot;</span><span class="p">;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>your code should print:</p>
+
+<pre><code>"Our  ********* ** *** **** , who's operating within  *** ************,  told 
+us about a possible encounter among suspects we're following. The  ******* ** 
+***** ** (**** ***** ** ** *** ******)  was in fact seen last night near  **** 
+******  while talking with  ** ** *** . They nervously glanced around, and  
+***** * *****, **** ******* ********* *** *********.  The details of the deal 
+are yet to be discovered."</code></pre>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>NOTE 1</strong>: Sometimes detectives place <code>&gt; &lt;</code> with punctuation around, your program should handle those cases as well, preserving punctuation in the output. 
+I.e.</p>
+
+<pre><code>Our &gt; informant Mr Big Ears &lt;, who's</code></pre>
+<p>should become</p>
+
+<pre><code>Our  ********* ** *** **** , who's</code></pre>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><br/></p>
+<p><strong>NOTE 2</strong>: Your program should also preserve punctuation in anonimized words, i.e.</p>
+
+<pre><code>&gt; suspect Mr Wrong Do (also known as Mr Cut Throat)</code></pre>
+<p>should become:</p>
+
+<pre><code>******* ** ***** ** (**** ***** ** ** *** ******)</code></pre>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><br/></p>
+<p><strong>IMPORTANT: HAVE YOU READ THE ABOVE NOTES?</strong></p>
+<p>Making a rough version of the program should be relatively straightforward, making the details also work may be more challenging</p>
+<p><strong>HINT</strong>: to build the output string incrementally, use a <code>StringBuilder</code></p>
+
+</div>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="4.5.-Loop-Analysis"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-5-loop-analysis.html">4.5. Loop Analysis</a><a class="anchor-link" href="#4.5.-Loop-Analysis">&#182;</a></h2><p>1) Tracing Loops</p>
@@ -14949,88 +15019,40 @@ I.e.</p>
 <p>5) Loop Analysis Game</p>
 
 </div>
-</div>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="4.6.-Unit-4-Summary"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit4-Iteration/topic-4-6-summary.html">4.6. Unit 4 Summary</a><a class="anchor-link" href="#4.6.-Unit-4-Summary">&#182;</a></h2><p>1) Concept Summary</p>
-<p>2) Java Keyword Summary</p>
-<p>3) Vocabulary Practice</p>
-<p>4) Common Mistakes</p>
+<h2 id="CodingBat-exercises---DO-THEM-!">CodingBat exercises - DO THEM !<a class="anchor-link" href="#CodingBat-exercises---DO-THEM-!">&#182;</a></h2><ul>
+<li><a href="https://codingbat.com/java/Warmup-1">Warmup-1</a></li>
+<li><a href="https://codingbat.com/java/Warmup-2">Warmup-2</a> (not arrays)</li>
+<li><a href="https://codingbat.com/java/String-1">String 1</a></li>
+<li><a href="https://codingbat.com/java/Logic-1">Logic 1</a></li>
+<li><a href="https://codingbat.com/java/Logic-2">Logic 2</a></li>
+<li><a href="https://codingbat.com/java/String-2">String 2</a></li>
+</ul>
 
 </div>
-</div>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="4.7.-Mixed-Up-Code-Practice"><a href="">4.7. Mixed Up Code Practice</a><a class="anchor-link" href="#4.7.-Mixed-Up-Code-Practice">&#182;</a></h2><p>4.8. Coding Practice with Loops
-4.9. Multiple Choice Exercises
-4.9.1. Easier Multiple Choice Questions
-4.9.2. Medium Multiple Choice Questions
-4.9.3. More Practice
-4.10. Free Response Questions (FRQs) for Control Structures
-4.10.1. 2019 APCalendar FRQ
-4.10.2. Part A: numberOfLeapYear()
-4.10.3. How to solve numberOfLeapYears()
-4.10.4. Part B: dayOfWeek()
-4.11. Free Response - Self Divisor A
-4.11.1. How to solve this problem
-4.11.2. Video - One way to code the solution
-4.12. Free Response - String Scramble A
-4.12.1. How to solve this problem
-4.12.2. Figuring out the algorithm
-4.12.3. Write the Code
-4.12.4. Video - One way to code the solution
-4.13. Consumer Review Lab
-4.13.1. Activity 0 Analyzing Reviews
-4.13.2. Activity 1 : Sentiment Value
-4.13.3. Activity 2 :Total Sentiment Value and Star Ratings
-4.13.4. Activity 3 : Autogenerate a Fake Review
-4.13.5. Activity 4 : Create a More Positive or Negative Review
-4.13.6. Activity 5 : Open-ended Activity
-user not logged in</p>
+<h2 id="Edabit-exercises---DO-THEM-!">Edabit exercises - DO THEM !<a class="anchor-link" href="#Edabit-exercises---DO-THEM-!">&#182;</a></h2><p><a href="https://edabit.com/challenges/java">https://edabit.com/challenges/java</a></p>
+<ul>
+<li><strong>Select Strings as tag</strong></li>
+<li>filter from Easy to Medium included</li>
+<li>ignore exercises with <em>regex</em> tag</li>
+<li>if you have to create strings, prefer StringBuilder to <code>+</code> operator !!</li>
+</ul>
+<p>Pros should take care of:</p>
+<ul>
+<li>null</li>
+<li>empty case</li>
+<li>one char</li>
+<li>repetitions</li>
+<li>lowercase / uppercase</li>
+<li>performance on very long strings</li>
+</ul>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-java"><pre><span></span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div></section></section>
 </div>
 </div>
