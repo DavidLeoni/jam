@@ -15,6 +15,8 @@
 
 [slides 4: Iteration (Loops)](slides-4-control-flow-loops.slides.html)
 
+[slides 5: Arrays and ArrayLists](slides-5-arrays-arraylists.slides.html)
+
 [Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
 
