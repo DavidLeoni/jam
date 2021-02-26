@@ -14604,7 +14604,7 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[I@496b0188
+<pre>[I@7d86980e
 </pre>
 </div>
 </div>
@@ -15497,7 +15497,7 @@ Back to the Future
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">goal</span> <span class="o">=</span> <span class="s">&quot;the treasure&quot;</span><span class="p">;</span> 
@@ -15517,31 +15517,1452 @@ Back to the Future
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="7.1.-Intro-to-ArrayLists"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit7-ArrayList/topic-7-1-arraylist-basics.html">7.1. Intro to ArrayLists</a><a class="anchor-link" href="#7.1.-Intro-to-ArrayLists">&#182;</a></h2><p>1) Import Package</p>
-<p>2) Declaring and Creating ArrayLists</p>
-<p>3) Programming Challenge : FRQ Digits</p>
+<h2 id="7.1.-Intro-to-ArrayLists"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit7-ArrayList/topic-7-1-arraylist-basics.html">7.1. Intro to ArrayLists</a><a class="anchor-link" href="#7.1.-Intro-to-ArrayLists">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">videogames</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="p">();</span>
+
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Prince of Persia&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Legend of Zelda&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Doom&quot;</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Prince of Persia, Legend of Zelda, Monkey Island, Doom]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="mutable-size">mutable size<a class="anchor-link" href="#mutable-size">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>fast append at the end</li>
+</ul>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>fast remove from the end</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>   <span class="c1">// removing from right end is fast</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Doom</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Prince of Persia, Legend of Zelda, Monkey Island]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="ArrayList:-array-or-list?">ArrayList: array or list?<a class="anchor-link" href="#ArrayList:-array-or-list?">&#182;</a></h3>
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Internally, it's more <a href="https://hg.openjdk.java.net/jdk8/jdk8/jdk/file/tip/src/share/classes/java/util/ArrayList.java">like an array</a></p>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="ArrayList:-fast-read/write-at-index">ArrayList: fast read/write at index<a class="anchor-link" href="#ArrayList:-fast-read/write-at-index">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Legend of Zelda</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Bubble bubble&quot;</span><span class="p">);</span>  <span class="c1">// returns the removed element</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Legend of Zelda</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Prince of Persia, Bubble bubble, Monkey Island]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="7.2.-ArrayList-Methods"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit7-ArrayList/topic-7-2-arraylist-methods.html">7.2. ArrayList Methods</a><a class="anchor-link" href="#7.2.-ArrayList-Methods">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">size</span><span class="p">();</span>   <span class="c1">// 3</span>
+</pre></div>
+<div class="highlight"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Street Fighter&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="err">`</span>  <span class="c1">// inserts at arbitrary position, slow!</span>
+</pre></div>
 
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="7.2.-ArrayList-Methods"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit7-ArrayList/topic-7-2-arraylist-methods.html">7.2. ArrayList Methods</a><a class="anchor-link" href="#7.2.-ArrayList-Methods">&#182;</a></h2><p>1) Size()</p>
-<p>2) Add(obj) to an ArrayList</p>
-<p>3) Add(index,obj) in an ArrayList</p>
-<p>4) Remove(index) from ArrayList</p>
-<p>5) ArrayList get/set Methods</p>
-<p>6) Comparing arrays and ArrayLists</p>
-<p>7) Programming Challenge : Array to ArrayList</p>
+<h3 id="search-methods">search methods<a class="anchor-link" href="#search-methods">&#182;</a></h3>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>true</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;Gioco del pippero&quot;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>-1</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>    <span class="c1">// only first occurrence !</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>true</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Prince of Persia, Bubble bubble]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ArrayList:-TAKE-AWAY-?">ArrayList: TAKE AWAY ?<a class="anchor-link" href="#ArrayList:-TAKE-AWAY-?">&#182;</a></h2><ul>
+<li><p><code>videogames.remove("Monkey Island");</code></p>
+</li>
+<li><p><code>videogames.remove(2);</code></p>
+</li>
+<li><p><code>videogames.remove(videogames.indexOf("Monkey Island"));</code></p>
+</li>
+</ul>
 
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="7.3.-Traversing-ArrayLists-with-Loops"><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit7-ArrayList/topic-7-3-arraylist-loops.html">7.3. Traversing ArrayLists with Loops</a><a class="anchor-link" href="#7.3.-Traversing-ArrayLists-with-Loops">&#182;</a></h2><p>1) Enhanced For Each Loop</p>
-<p>2) For Loop</p>
-<p>3) While Loop</p>
-<p>4) ArrayList of Student Objects</p>
-<p>5) Programming Challenge : FRQ Word Pairs</p>
+<h2 id="ArrayList:-TAKE-AWAY-?">ArrayList: TAKE AWAY ?<a class="anchor-link" href="#ArrayList:-TAKE-AWAY-?">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">videogames</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">)){</span>
+    <span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ArrayList:-TAKE-AWAY-?">ArrayList: TAKE AWAY ?<a class="anchor-link" href="#ArrayList:-TAKE-AWAY-?">&#182;</a></h2><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">videogames</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ArrayList:-TAKE-AWAY-?">ArrayList: TAKE AWAY ?<a class="anchor-link" href="#ArrayList:-TAKE-AWAY-?">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">videogames</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Prince of Persia&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Legend of Zelda&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Doom&quot;</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Prince of Persia, Monkey Island, Legend of Zelda, Monkey Island, Doom]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>  
+<span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>  
+<span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>  
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span>
+</pre></div>
+
+</div>
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>  <span class="c1">// removes first occurrence</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>  <span class="c1">// removes second</span>
+
+<span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>  <span class="c1">// no third occurrence, doesn&#39;t explode</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Prince of Persia, Legend of Zelda, Doom]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ArrayList:-TAKE-AWAY-?">ArrayList: TAKE AWAY ?<a class="anchor-link" href="#ArrayList:-TAKE-AWAY-?">&#182;</a></h2><p><a href="https://csawesome.runestone.academy/runestone/books/published/csawesome/Unit7-ArrayList/topic-7-3-arraylist-loops.html">7.3. Traversing ArrayLists with Loops</a></p>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">s</span> <span class="p">:</span> <span class="n">videogames</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">s</span><span class="p">)){</span>
+        <span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Never remove nor add stuff to a sequence you are iterating with a</strong> <strong><em>for each</em></strong></p>
+<div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+<span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ConcurrentModificationException</span><span class="p">:</span> <span class="kc">null</span>
+    <span class="n">at</span> <span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="o">/</span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ArrayList$Itr</span><span class="p">.</span><span class="na">checkForComodification</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">.</span><span class="na">java</span><span class="p">:</span><span class="mi">1013</span><span class="p">)</span>
+    <span class="n">at</span> <span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="o">/</span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ArrayList$Itr</span><span class="p">.</span><span class="na">next</span><span class="p">(</span><span class="n">ArrayList</span><span class="p">.</span><span class="na">java</span><span class="p">:</span><span class="mi">967</span><span class="p">)</span>
+    <span class="n">at</span> <span class="p">.(</span><span class="err">#</span><span class="mi">187</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ArrayList:-TAKE-AWAY!-Algorithmic">ArrayList: TAKE AWAY! Algorithmic<a class="anchor-link" href="#ArrayList:-TAKE-AWAY!-Algorithmic">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">videogames</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Prince of Persia&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Legend of Zelda&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Doom&quot;</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">videogames</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    
+    <span class="n">videogames</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+    
+    <span class="n">i</span> <span class="o">=</span> <span class="n">videogames</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Prince of Persia, Legend of Zelda, Doom]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ArrayList:-TAKE-AWAY!-Guru">ArrayList: TAKE AWAY! Guru<a class="anchor-link" href="#ArrayList:-TAKE-AWAY!-Guru">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">removeAll</span><span class="p">(</span> <span class="n">Collections</span><span class="p">.</span><span class="na">singleton</span><span class="p">(</span><span class="s">&quot;MonkeyIsland&quot;</span><span class="p">)</span> <span class="p">);</span>
+</pre></div>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Need-mutability?">Need mutability?<a class="anchor-link" href="#Need-mutability?">&#182;</a></h2><p><strong>What happens when you allow people to write on stuff you own?</strong></p>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="lists/img/graffiti.jpg" alt="graffiti1"></p>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Don't-need-mutability?---'unmodifiable'-views">Don't need mutability? - 'unmodifiable' views<a class="anchor-link" href="#Don't-need-mutability?---'unmodifiable'-views">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="lists/img/fenced-house.jpg" alt="fenced-house.jpg"></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Don't-need-mutability?---'unmodifiable'-views">Don't need mutability? - 'unmodifiable' views<a class="anchor-link" href="#Don't-need-mutability?---'unmodifiable'-views">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">videogames</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="p">();</span>
+
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Prince of Persia&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Legend of Zelda&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>true</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">myView</span> <span class="o">=</span> <span class="n">Collections</span><span class="p">.</span><span class="na">unmodifiableList</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span>
+
+<span class="n">myView</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Legend of Zelda</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Don't-need-mutability?---'unmodifiable'-views">Don't need mutability? - 'unmodifiable' views<a class="anchor-link" href="#Don't-need-mutability?---'unmodifiable'-views">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">myView</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Pong&quot;</span><span class="p">);</span>
+</pre></div>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+<span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">UnsupportedOperationException</span><span class="p">:</span> <span class="kc">null</span>
+    <span class="n">at</span> <span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="o">/</span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">Collections$UnmodifiableCollection</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">Collections</span><span class="p">.</span><span class="na">java</span><span class="p">:</span><span class="mi">1062</span><span class="p">)</span>
+    <span class="n">at</span> <span class="p">.(</span><span class="err">#</span><span class="mi">282</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Beware you can still change original array!!!</strong></p>
+
+</div>
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Diablo&quot;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>true</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">myView</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[Prince of Persia, Legend of Zelda, Monkey Island, Diablo]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Don't-need-mutability?--Java-9-style">Don't need mutability?  Java 9 style<a class="anchor-link" href="#Don't-need-mutability?--Java-9-style">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Java 9</span>
+
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">computers</span> <span class="o">=</span> <span class="n">List</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;Apple II&quot;</span><span class="p">,</span> <span class="s">&quot;Commodore 64&quot;</span><span class="p">,</span>  <span class="s">&quot;Amiga 500&quot;</span><span class="p">,</span> <span class="s">&quot;486&quot;</span><span class="p">);</span>  
+
+<span class="n">computers</span><span class="p">.</span><span class="na">getClass</span><span class="p">();</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>class java.util.ImmutableCollections$ListN</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">computers</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Commodore 64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">computers</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Vic 20&quot;</span><span class="p">);</span>
+
+<span class="o">---------------------------------------------------------------------------</span>
+<span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">UnsupportedOperationException</span><span class="p">:</span> <span class="kc">null</span>
+    <span class="n">at</span> <span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="o">/</span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ImmutableCollections</span><span class="p">.</span><span class="na">uoe</span><span class="p">(</span><span class="n">ImmutableCollections</span><span class="p">.</span><span class="na">java</span><span class="p">:</span><span class="mi">127</span><span class="p">)</span>
+    <span class="n">at</span> <span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="o">/</span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ImmutableCollections$AbstractImmutableList</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">ImmutableCollections</span><span class="p">.</span><span class="na">java</span><span class="p">:</span><span class="mi">160</span><span class="p">)</span>
+    <span class="n">at</span> <span class="p">.(</span><span class="err">#</span><span class="mi">252</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><code>ImmutableCollections</code>  </li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>thread safe</li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><em>very</em> good for concurrent code !</li>
+</ul>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Don't-need-mutability?-Java-9-style-from-list">Don't need mutability? Java 9 style from list<a class="anchor-link" href="#Don't-need-mutability?-Java-9-style-from-list">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">videogames</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="p">();</span>
+
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Prince of Persia&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Legend of Zelda&quot;</span><span class="p">);</span>
+<span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Monkey Island&quot;</span><span class="p">);</span>
+
+
+<span class="c1">// ugly new String[0] tells java the type ..</span>
+
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">imm</span> <span class="o">=</span> <span class="n">List</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="n">videogames</span><span class="p">.</span><span class="na">toArray</span><span class="p">(</span><span class="k">new</span> <span class="n">String</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">));</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">imm</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Pong&quot;</span><span class="p">);</span>
+<span class="o">---------------------------------------------------------------------------</span>
+<span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">UnsupportedOperationException</span><span class="p">:</span> <span class="kc">null</span>
+    <span class="n">at</span> <span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="o">/</span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ImmutableCollections</span><span class="p">.</span><span class="na">uoe</span><span class="p">(</span><span class="n">ImmutableCollections</span><span class="p">.</span><span class="na">java</span><span class="p">:</span><span class="mi">127</span><span class="p">)</span>
+    <span class="n">at</span> <span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="o">/</span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ImmutableCollections$AbstractImmutableCollection</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">ImmutableCollections</span><span class="p">.</span><span class="na">java</span><span class="p">:</span><span class="mi">131</span><span class="p">)</span>
+    <span class="n">at</span> <span class="p">.(</span><span class="err">#</span><span class="mi">331</span><span class="p">:</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">videogames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Diablo II&quot;</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">videogames</span><span class="p">);</span> <span class="c1">// changed</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Prince of Persia, Legend of Zelda, Monkey Island, Diablo II]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">imm</span><span class="p">);</span>       <span class="c1">// no change</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Prince of Persia, Legend of Zelda, Monkey Island]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Truly-immutable-?">Truly immutable ?<a class="anchor-link" href="#Truly-immutable-?">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Date</span><span class="p">;</span>
+
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">computers</span> <span class="o">=</span> <span class="n">List</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="s">&quot;Apple II&quot;</span><span class="p">,</span>       <span class="s">&quot;Commodore 64&quot;</span><span class="p">,</span>      <span class="s">&quot;Amiga 500&quot;</span><span class="p">);</span>  
+    
+<span class="n">List</span><span class="o">&lt;</span><span class="n">Date</span><span class="o">&gt;</span>   <span class="n">releases</span>  <span class="o">=</span> <span class="n">List</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">77</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">82</span><span class="p">,</span><span class="mo">07</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>  <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">87</span><span class="p">,</span><span class="mo">03</span><span class="p">,</span><span class="mi">1</span><span class="p">));</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">releases</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Wed Jun 01 00:00:00 CEST 1977, Sun Aug 01 00:00:00 CEST 1982, Wed Apr 01 00:00:00 CEST 1987]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="n">releases</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="na">setYear</span><span class="p">(</span><span class="mi">3077</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">releases</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[Sun Jun 01 00:00:00 CEST 4977, Sun Aug 01 00:00:00 CEST 1982, Wed Apr 01 00:00:00 CEST 1987]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Truly-immutable-!">Truly immutable !<a class="anchor-link" href="#Truly-immutable-!">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.time.LocalDate</span><span class="p">;</span>   <span class="c1">// java 8, good stuff</span>
+
+<span class="n">List</span><span class="o">&lt;</span><span class="n">LocalDate</span><span class="o">&gt;</span> <span class="n">releases</span> <span class="o">=</span> <span class="n">List</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="n">LocalDate</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="mi">1977</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> 
+                                   <span class="n">LocalDate</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="mi">1982</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> 
+                                   <span class="n">LocalDate</span><span class="p">.</span><span class="na">of</span><span class="p">(</span><span class="mi">1987</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
+
+<span class="c1">//releases.get(0).setYear(3077)  // impossible !</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">releases</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[1977-06-01, 1982-08-01, 1987-04-01]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Prefer-immutable-stuff-if-you:">Prefer immutable stuff if you:<a class="anchor-link" href="#Prefer-immutable-stuff-if-you:">&#182;</a></h2><ul>
+<li>use it in many places</li>
+</ul>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>small data structure</li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>you have concurrent threads</li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>pass it to untrusted people (your collegues...)</li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>don't have to change it too often</li>
+</ul>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Immutability-downsides">Immutability downsides<a class="anchor-link" href="#Immutability-downsides">&#182;</a></h2><ul>
+<li>java is historically mutability-oriented</li>
+</ul>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>reconstructing objects from file may be hard</li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>not all your colleagues may like it</li>
+</ul>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Exercise:-Travelbook">Exercise: Travelbook<a class="anchor-link" href="#Exercise:-Travelbook">&#182;</a></h2><p>Suppose you visited the attic and found a stack of books, which we represent as a list of strings. Each string is prefixed by a label of one character indicating the category (<code>D</code> for Detective story, <code>T</code> for Travel, <code>H</code> for History)</p>
+<p>Since we are passionate about travel books, we want to examine stack one book at a time to transfer books into another pile we call ŧravel, which at the beginning is empty. We start from the top book in stack, and transfer into travel only the books starting with the label <code>T</code> like (<code>"T-Australia"</code>)</p>
+<p>The non-travel books are not interesting and must be discarded.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">travelbook</span><span class="p">(){</span>
+    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">stack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="p">();</span>
+    <span class="n">stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;H-Middle Ages&quot;</span><span class="p">);</span>   <span class="c1">// &lt;---- bottom</span>
+    <span class="n">stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;T-Australia&quot;</span><span class="p">);</span>
+    <span class="n">stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;T-Scotland&quot;</span><span class="p">);</span>
+    <span class="n">stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;D-Suspects&quot;</span><span class="p">);</span>
+    <span class="n">stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;T-Caribbean&quot;</span><span class="p">);</span>     <span class="c1">// &lt;---- top</span>
+
+    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">travel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Write some code that produces the following print:</p>
+
+<pre><code>At the beginning:
+    stack:   ["H-Middle Ages", "T-Australia", "T-Scotland", "D-Suspects", "T-Caribbean"]
+    travel: []
+Taken T-Caribbean
+    stack:   ["H-Middle Ages", "T-Australia", "T-Scotland", "D-Suspects"]
+    travel: ["T-Caribbean"]
+Discarded D-Suspects
+    stack:   ["H-Middle Ages", "T-Australia", "T-Scotland"]
+    travel: ["T-Caribbean"]
+Taken T-Scotland
+    stack:   ["H-Middle Ages", "T-Australia"]
+    travel: ["T-Caribbean", "T-Scotland"]
+Taken T-Australia
+    stack:   ["H-Middle Ages"]
+    travel: ["T-Caribbean", "T-Scotland", "T-Australia"]
+Discarded H-Middle Ages
+    stack:   []
+    travel: ["T-Caribbean", "T-Scotland", "T-Australia"]</code></pre>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Exercise---Bang!">Exercise - Bang!<a class="anchor-link" href="#Exercise---Bang!">&#182;</a></h2><p>There are two stacks of objects <code>right_stack</code> and <code>left_stack</code> which we represent as lists of strings. A cowboy shoots the objects at the top of the stacks, alternating the stack at each shoot. The cowboy always hits the target, so each shot decreases a stack.</p>
+<ul>
+<li>Suppose the objects on top are the ones at the end of the list</li>
+<li>To keep track of which stack to hit, use a variable shoot holding either <code>"R"</code> or <code>"L"</code> character</li>
+<li>After each shot the cowboy if possible changes the stack , otherwise keeps shooting at the same stack until it’s empty.</li>
+<li>your code must work for any stack and initial shot</li>
+</ul>
+<p><strong>Example - given:</strong></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">bang</span><span class="p">(){</span>     
+    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">left_stack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="p">();</span>
+    <span class="n">left_stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;box&quot;</span><span class="p">);</span>
+    <span class="n">left_stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;boot&quot;</span><span class="p">);</span>
+    <span class="n">left_stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;horseshoe&quot;</span><span class="p">);</span>
+    <span class="n">left_stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;bucket&quot;</span><span class="p">);</span>
+
+    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">right_stack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="p">();</span>
+    <span class="n">left_stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;bin&quot;</span><span class="p">);</span>
+    <span class="n">left_stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;saddle&quot;</span><span class="p">);</span>
+    <span class="n">left_stack</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;tin can&quot;</span><span class="p">);</span>
+    
+    <span class="n">String</span> <span class="n">shoot</span> <span class="o">=</span> <span class="s">&quot;R&quot;</span><span class="p">;</span>
+    
+    <span class="c1">// write here</span>
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>after your code, it must print:</p>
+
+<pre><code>Ready?
+   left_stack: ["box", "boot", "horseshoe", "bucket"]
+  right_stack: ["bin", "saddle", "tin can"]
+BANG! right:  tin can
+   left_stack: ["box", "boot", "horseshoe", "bucket"]
+  right_stack: ["bin", "saddle"]
+BANG! left:   bucket
+   left_stack: ["box", "boot", "horseshoe"]
+  right_stack: ["bin", "saddle"]
+BANG! right:  saddle
+   left_stack: ["box", "boot", "horseshoe"]
+  right_stack: ["bin"]
+BANG! left:   horseshoe
+   left_stack: ["box", "boot"]
+  right_stack: ["bin"]
+BANG! right:  bin
+   left_stack: ["box", "boot"]
+  right_stack: []
+BANG! left:   boot
+   left_stack: ["box"]
+  right_stack: []
+Nothing to shoot on the right!
+   left_stack: ["box"]
+  right_stack: []
+BANG! left:   box
+   left_stack: []
+  right_stack: []</code></pre>
 
 </div>
 </div></section></section><section><section>
