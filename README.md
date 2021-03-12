@@ -17,6 +17,10 @@
 
 [slides 5: Arrays and ArrayLists](slides-5-arrays-arraylists.slides.html)
 
+[slides 6: classes](slides-6-classes.slides.html)
+
+[slides 7: matrices](slides-7-matrices.slides.html)
+
 [Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
 
