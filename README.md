@@ -3,6 +3,10 @@
 
 ## Alta Formazione ITT Marconi
 
+
+For easy read, click .ipynb files on Github: [github.com/DavidLeoni/jam](https://github.com/DavidLeoni/jam)
+
+
 [slides 0.1 Course intro](slides-0-intro.slides.html): 
 
 [slides 0.2: Architecture and tools](slides-0-tools.slides.html)
@@ -17,9 +21,9 @@
 
 [slides 5: Arrays and ArrayLists](slides-5-arrays-arraylists.slides.html)
 
-[slides 6: classes](slides-6-classes.slides.html)
+[slides 6: Classes](slides-6-classes.slides.html)
 
-[slides 7: matrices](slides-7-matrices.slides.html)
+[slides 7: Matrices](slides-7-matrices.slides.html)
 
 [Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
