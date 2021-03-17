@@ -25,7 +25,7 @@ For easy read, click .ipynb files on Github: [github.com/DavidLeoni/jam](https:/
 
 [slides 7: Matrices](slides-7-matrices.slides.html)
 
-[slides 8: Matrices](slides-8-sets-maps.slides.html)
+[slides 8: Sets and maps](slides-8-sets-maps.slides.html)
 
 [Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
