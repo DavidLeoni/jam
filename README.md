@@ -29,6 +29,6 @@ For easy read, click .ipynb files on Github: [github.com/DavidLeoni/jam](https:/
 
 [Challenge 1: Primitive types](basics/primitive-types-chal.html)
 
-[References](references.ipynb) - contains many exercises
+[References](references.html) - contains many exercises
 
 
