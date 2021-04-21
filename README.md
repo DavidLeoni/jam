@@ -32,3 +32,7 @@ For easy read, click .ipynb files on Github: [github.com/DavidLeoni/jam](https:/
 [References](references.html) - contains many exercises
 
 
+[Exams](exams/)
+
+* [exams/2021-04-20/solutions](exams/2021-04-20/solutions/)
+
