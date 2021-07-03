@@ -35,4 +35,5 @@ For easy read, click .ipynb files on Github: [github.com/DavidLeoni/jam](https:/
 [Exams](https://github.com/DavidLeoni/jam/tree/master/exams)
 
 * [exams/2021-04-20/solutions](https://github.com/DavidLeoni/jam/tree/master/exams/2021-04-20/solutions)
+* [exams/2021-07-02/solutions](https://github.com/DavidLeoni/jam/tree/master/exams/2021-07-02/solutions)
 
